@@ -18,17 +18,17 @@ class Employee:
 
     def __str__(self):
         if(self.monthPay>0 and self.hourPay==0 and self.commPay==0 and self.bonus==0):
-            return self.name+" works on a monthly salary of "+str(self.monthPay)+". Their total pay is "+str(self.get_pay())+"."
+            return self.name+" works on a monthly salary of "+str(self.monthPay)+".  Their total pay is "+str(self.get_pay())+"."
         if(self.monthPay==0 and self.hourPay>0 and self.commPay==0 and self.bonus==0):
-            return self.name+" works on a contract of "+str(self.hour)+"hours at "+str(self.hourPay)+"/hour. Their total pay is "+str(self.get_pay())+"."
+            return self.name+" works on a contract of "+str(self.hour)+"hours at "+str(self.hourPay)+"/hour.  Their total pay is "+str(self.get_pay())+"."
         if(self.monthPay>0 and self.hourPay==0 and self.commPay>0 and self.bonus==0):
-            return self.name+" works on a monthly salary of "+str(self.monthPay)+"and receives a commission for"+str(self.comm)+"contract(s) at "+str(self.commPay)+"/contract. Their total pay is "+str(self.get_pay())+"."
+            return self.name+" works on a monthly salary of "+str(self.monthPay)+"and receives a commission for"+str(self.comm)+"contract(s) at "+str(self.commPay)+"/contract.  Their total pay is "+str(self.get_pay())+"."
         if(self.monthPay==0 and self.hourPay>0 and self.commPay>0 and self.bonus==0):
-            return self.name+" works on a contract of "+str(self.hour)+"hours at "+str(self.hourPay)+"/hour and receives a commission for "+str(self.comm)+"contract(s) at "+str(self.commPay)+"/contract. Their total pay is "+str(self.get_pay())+"."
+            return self.name+" works on a contract of "+str(self.hour)+"hours at "+str(self.hourPay)+"/hour and receives a commission for "+str(self.comm)+"contract(s) at "+str(self.commPay)+"/contract.  Their total pay is "+str(self.get_pay())+"."
         if(self.monthPay>0 and self.hourPay==0 and self.commPay==0 and self.bonus>0):
-            return self.name+" works on a monthly salary of "+str(self.monthPay)+"and receives a bonus commission of "+str(self.bonus)+". Their total pay is "+str(self.get_pay())+"."
+            return self.name+" works on a monthly salary of "+str(self.monthPay)+"and receives a bonus commission of "+str(self.bonus)+".  Their total pay is "+str(self.get_pay())+"."
         if(self.monthPay==0 and self.hourPay>0 and self.commPay==0 and self.bonus>0):
-            return self.name+" works on a contract of "+str(self.hour)+"hours at "+str(self.hourPay)+"/hour and receives a bonus commission of "+str(self.bonus)+". Their total pay is "+str(self.get_pay())+"."
+            return self.name+" works on a contract of "+str(self.hour)+"hours at "+str(self.hourPay)+"/hour and receives a bonus commission of "+str(self.bonus)+".  Their total pay is "+str(self.get_pay())+"."
 
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
