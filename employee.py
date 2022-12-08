@@ -18,7 +18,7 @@ class Employee:
 
     def __str__(self):
         if(self.monthPay>0 and self.hourPay==0 and self.commPay==0 and self.bonus==0):
-            return "^"+self.name+" works on a monthly salary of "+str(self.monthPay)+".\\s+Their total pay is "+str(self.get_pay())+".$"
+            return self.name+" works on a monthly salary of "+str(self.monthPay)+".  Their total pay is "+str(self.get_pay())+"."
         if(self.monthPay==0 and self.hourPay>0 and self.commPay==0 and self.bonus==0):
             return self.name+" works on a contract of "+str(self.hour)+"hours at "+str(self.hourPay)+"/hour.\\s+Their total pay is "+str(self.get_pay())+"."
         if(self.monthPay>0 and self.hourPay==0 and self.commPay>0 and self.bonus==0):
