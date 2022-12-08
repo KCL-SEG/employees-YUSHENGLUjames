@@ -18,17 +18,17 @@ class Employee:
 
     def __str__(self):
         if(self.monthPay>0 and self.hourPay==0 and self.commPay==0 and self.bonus==0):
-            print(self.name,"works on a monthly salary of "+str(self.monthPay)+".  Their total pay is",str(self.totalPay)+".")
+            print(self.name,"works on a monthly salary of "+str(self.monthPay)+".\nTheir total pay is",str(self.totalPay)+".")
         if(self.monthPay==0 and self.hourPay>0 and self.commPay==0 and self.bonus==0):
-            print(self.name,"works on a contract of",self.hour,"hours at "+str(self.hourPay)+"/hour.  Their total pay is "+str(self.totalPay)+".")
+            print(self.name,"works on a contract of",self.hour,"hours at "+str(self.hourPay)+"/hour.\nTheir total pay is "+str(self.totalPay)+".")
         if(self.monthPay>0 and self.hourPay==0 and self.commPay>0 and self.bonus==0):
-            print(self.name,"works on a monthly salary of",self.monthPay,"and receives a commission for",self.comm,"contract(s) at "+str(self.commPay)+"/contract.  Their total pay is "+str(self.totalPay)+".")
+            print(self.name,"works on a monthly salary of",self.monthPay,"and receives a commission for",self.comm,"contract(s) at "+str(self.commPay)+"/contract.\nTheir total pay is "+str(self.totalPay)+".")
         if(self.monthPay==0 and self.hourPay>0 and self.commPay>0 and self.bonus==0):
-            print(self.name,"works on a contract of",self.hour,"hours at "+str(self.hourPay)+"/hour and receives a commission for",self.comm,"contract(s) at "+str(self.commPay)+"/contract.  Their total pay is "+str(self.totalPay)+".")
+            print(self.name,"works on a contract of",self.hour,"hours at "+str(self.hourPay)+"/hour and receives a commission for",self.comm,"contract(s) at "+str(self.commPay)+"/contract.\nTheir total pay is "+str(self.totalPay)+".")
         if(self.monthPay>0 and self.hourPay==0 and self.commPay==0 and self.bonus>0):
-            print(self.name,"works on a monthly salary of",self.monthPay,"and receives a bonus commission of "+str(self.bonus)+".  Their total pay is "+str(self.totalPay)+".")
+            print(self.name,"works on a monthly salary of",self.monthPay,"and receives a bonus commission of "+str(self.bonus)+".\nTheir total pay is "+str(self.totalPay)+".")
         if(self.monthPay==0 and self.hourPay>0 and self.commPay==0 and self.bonus>0):
-            print(self.name,"works on a contract of",self.hour,"hours at "+str(self.hourPay)+"/hour and receives a bonus commission of "+str(self.bonus)+".  Their total pay is "+str(self.totalPay)+".")
+            print(self.name,"works on a contract of",self.hour,"hours at "+str(self.hourPay)+"/hour and receives a bonus commission of "+str(self.bonus)+".\nTheir total pay is "+str(self.totalPay)+".")
         return self.name
 
 
